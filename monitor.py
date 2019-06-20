@@ -35,3 +35,19 @@ def check_content():
     soup = BeautifulSoup(r.text, 'html.parser')
     result = soup.find_all(string=look_for)
     return result
+
+def write_file():
+    """writing data to a logfile"""
+    data = {}
+    data['websites'] = []
+    data['websites'].append({
+        'date': date,
+        'url': url,
+        'time': time,
+        'status': status,
+        'content': content
+        })
+
+    with open('logfile.json', 'w') as outfile:
+        json.dump(data, outfile)
+    return("Data saved")
