@@ -28,3 +28,10 @@ def check_time():
     """ checking response time """
     time = str(r.elapsed.total_seconds())
     return time
+
+def check_content():
+    """ parsing using BeautifulSoup and checking if page content matches the
+    content requirements """
+    soup = BeautifulSoup(r.text, 'html.parser')
+    result = soup.find_all(string=look_for)
+    return result
