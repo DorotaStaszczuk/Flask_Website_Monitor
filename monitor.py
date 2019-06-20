@@ -23,3 +23,8 @@ def check_url(url):
         return status_code
     except requests.ConnectionError:
         return site_down
+
+def check_time():
+    """ checking response time """
+    time = str(r.elapsed.total_seconds())
+    return time
