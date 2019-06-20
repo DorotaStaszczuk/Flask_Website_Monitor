@@ -1,0 +1,34 @@
+{
+  "websites": [
+    {
+      "url": "https://www.google.pl/",
+      "lookFor": "szukaj",
+      "period": "90"
+    },
+    {
+        "url": "https://github.com/",
+        "lookFor": "kalarepa",
+        "period": "45"
+    },
+    {
+        "url": "https://bioinfobank.com/",
+        "lookFor": "Fintech",
+        "period": "60"
+    },
+    {
+        "url": "https://coderslab.pl/pl/",
+        "lookFor": "Pracuj.pl",
+        "period": "60"
+    },
+    {
+        "url": "https://www.gitignore.io/",
+        "lookFor": "sale",
+        "period": "55"
+    },
+    {
+        "url": "https://stackoverflow.com/",
+        "lookFor": "Questions",
+        "period": "75"
+    }
+  ]
+}
