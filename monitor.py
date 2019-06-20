@@ -15,3 +15,11 @@ def read_file(url):
             print('period: ' + d['period'])
             print('')
     return("File opened")
+
+def check_url(url):
+    """ checking websites and returning status code """
+    try:
+        status_code = requests.get(url, timeout=30).status_code
+        return status_code
+    except requests.ConnectionError:
+        return site_down
