@@ -51,3 +51,13 @@ def write_file():
     with open('logfile.json', 'w') as outfile:
         json.dump(data, outfile)
     return("Data saved")
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return render_template('base.html')
+
+if __name__ == "__main__":
+    s = check_url(url)
+    app.run()
